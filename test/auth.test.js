@@ -4,6 +4,13 @@ import mongoose from 'mongoose';
 import app from '../src/app.js';
 
 describe('POST /api/auth/login', () => {
+  before(async () => {
+    if (mongoose.connection.readyState === 0) {
+      const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/gestao-de-alunos';
+      await mongoose.connect(uri);
+    }
+  });
+
   it('deve retornar 200 e um token quando o admin informar e-mail e senha corretos', async () => {
     const resposta = await request(app)
       .post('/api/auth/login')
