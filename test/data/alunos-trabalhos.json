@@ -1,0 +1,36 @@
+{
+  "admin": {
+    "email": "admin@escola.com",
+    "senha": "admin123"
+  },
+  "cenarios": [
+    {
+      "descricao": "Cadastro e entrega de trabalho do Aluno Lucas em Matemática",
+      "aluno": {
+        "nome": "Lucas Ferreira",
+        "email": "lucas.ferreira@test.com",
+        "matricula": "2026101",
+        "senha": "alunoSenha123"
+      },
+      "disciplinaId": "disciplina-matematica",
+      "trabalho": {
+        "titulo": "Trabalho de Cálculo Numérico",
+        "descricao": "Implementação de métodos numéricos e interpolação linear."
+      }
+    },
+    {
+      "descricao": "Cadastro e entrega de trabalho da Aluna Beatriz em Programação Web",
+      "aluno": {
+        "nome": "Beatriz Oliveira",
+        "email": "beatriz.oliveira@test.com",
+        "matricula": "2026102",
+        "senha": "alunoSenha456"
+      },
+      "disciplinaId": "disciplina-programacao-web",
+      "trabalho": {
+        "titulo": "Desenvolvimento de Aplicação Single Page",
+        "descricao": "Construção de frontend interativo utilizando componentes modernos."
+      }
+    }
+  ]
+}
